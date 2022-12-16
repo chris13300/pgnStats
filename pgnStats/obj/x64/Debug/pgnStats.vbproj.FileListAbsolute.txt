@@ -1,0 +1,9 @@
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\bin\x64\Debug\pgnStats.exe.config
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\bin\x64\Debug\pgnStats.exe
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\bin\x64\Debug\pgnStats.pdb
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\bin\x64\Debug\pgnStats.xml
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\obj\x64\Debug\pgnStats.Resources.resources
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\obj\x64\Debug\pgnStats.vbproj.GenerateResource.Cache
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\obj\x64\Debug\pgnStats.exe
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\obj\x64\Debug\pgnStats.xml
+C:\Users\chris\Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\obj\x64\Debug\pgnStats.pdb

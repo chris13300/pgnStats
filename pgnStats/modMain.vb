@@ -19,11 +19,6 @@ Module modMain
         Dim moyTemps() As Single, nbTemps() As Integer, duree As Single, debut As Integer, fin As Integer
         Dim ordre1 As String, ordre2 As String, tabOrdre1() As String
 
-        If My.Computer.FileSystem.GetFileInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) & "Documents\Visual Studio 2013\Projects\pgnStats\pgnStats\bin\x64\Debug\pgnStats.exe").LastWriteTime > My.Computer.FileSystem.GetFileInfo(My.Application.Info.AssemblyName & ".exe").LastWriteTime Then
-            MsgBox("Il existe une version plus récente de ce programme !", MsgBoxStyle.Information)
-            End
-        End If
-
         Console.Title = My.Computer.Name & " : loading workers..."
         nbTaches = cpu() - 1
 
@@ -70,26 +65,6 @@ Module modMain
         Loop Until lecture.EndOfStream
         lecture.Close()
         ReDim Preserve tabPGN(nbLignes - 1)
-
-        '########################################################################################################
-        'chainePGN = My.Computer.FileSystem.ReadAllText(Replace(fichierPGN, ".pgn", "_bak.pgn"))
-
-        'Console.Title = My.Computer.Name & " : fix end of lines..."
-        'If InStr(chainePGN, vbCrLf) = 0 Then
-        'chainePGN = Replace(chainePGN, vbLf, vbCrLf)
-        'End If
-
-        'Console.Title = My.Computer.Name & " : loading of games..."
-        'chainePGN = Replace(chainePGN, vbLf & vbLf, vbCrLf & vbCrLf)
-        'chainePGN = Replace(chainePGN, "}" & vbLf, "}" & vbCrLf)
-        'chainePGN = Replace(chainePGN, "]" & vbLf, "]" & vbCrLf)
-        'chainePGN = Replace(chainePGN, "0-1" & vbCrLf & "[Event ", "0-1" & vbCrLf & vbCrLf & "[Event ")
-        'chainePGN = Replace(chainePGN, "1-0" & vbCrLf & "[Event ", "1-0" & vbCrLf & vbCrLf & "[Event ")
-        'chainePGN = Replace(chainePGN, "1/2-1/2" & vbCrLf & "[Event ", "1/2-1/2" & vbCrLf & vbCrLf & "[Event ")
-        'tabPGN = Split(chainePGN, vbCrLf)
-        'nombre de coups
-        'nbCoups = Split(chainePGN, "{").Length - 1
-        '########################################################################################################
 
         'on liste les joueurs blancs et noirs
         joueurs = ""
